@@ -279,7 +279,7 @@ const renderEditForm = (player) => {
   statsSection.innerHTML = "";
 
   const statsContainer = document.getElementById("player-stats-container");
-  player.playing_history.forEach((record, index) => {
+  player.playing_history?.forEach((record, index) => {
     const statsDiv = document.createElement("div");
     statsDiv.classList.add("player-stats");
 

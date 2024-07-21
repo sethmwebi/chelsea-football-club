@@ -1,7 +1,7 @@
 const heroSection = document.getElementsByClassName("hero-section")[0];
 const metadata = document.getElementsByClassName("metadata")[0];
 const statsSection = document.getElementsByClassName("stats")[0];
-const BASE_URL = "http://localhost:8001";
+const BASE_URL = "https://cfc-player-management.onrender.com";
 
 // Render player information
 const renderPlayerInfo = (player) => {

@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  background: rgb(0, 20, 137);
+  background: radial-gradient(
+    circle,
+    rgba(0, 20, 137, 1) 0%,
+    rgba(51, 0, 51, 1) 100%
+  );
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+  color: whitesmoke;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#error-container {
+  color: red;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-section {
+  display: flex;
+}
+
+.metadata {
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  gap: 1rem;
+}
+
+.single-player-image {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+#player-stats-container {
+  margin: 20px 0;
+}
+
+.player-stats-title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#player-stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.player-stats > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-stats > div > input {
+  color: whitesmoke;
+  outline: none;
+  height: 28px;
+  border-radius: 3px;
+  padding: 8px;
+  border: 1px solid whitesmoke;
+  background: transparent;
+}
+
+.player-record {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-record li {
+  margin-bottom: 2px;
+}
+
+.season-title {
+  margin: 5px;
+}
+
+.player-stats-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.single-player-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#players {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.player-info {
+  position: relative;
+}
+
+.edit-btn {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  cursor: pointer;
+  color: gray;
+}
+
+.delete-btn {
+  position: absolute;
+  top: -10px;
+  cursor: pointer;
+  right: -45px;
+  color: #d72638;
+}
+
+.other-players-title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.search-input-container > input {
+  color: whitesmoke;
+  outline: none;
+  height: 30px;
+  padding: 0 4px;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+  background-color: transparent;
+}
+
+.search-input-container > .fa-solid {
+  height: 30px;
+  background-color: whitesmoke;
+  padding: 0 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #171614;
+  display: flex;
+  align-items: center;
+}
+
+.player-item {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.player-stats-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.player-stats-table-none {
+  display: none;
+}
+
+.player-stats-table th {
+  border: 1px solid whitesmoke;
+  padding: 8px;
+  text-align: left;
+}
+
+.player-stats-table td {
+  border: 1px solid whitesmoke;
+  padding: 8px;
+}
+
+.other-players-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.other-players-title > .fa-plus {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+form > div > input {
+  outline: none;
+  height: 28px;
+  border-radius: 3px;
+  padding: 8px;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  background: transparent;
+}
+
+form > button[type="submit"] {
+  padding: 8px 0px;
+  border-radius: 5px;
+  background-color: #171614;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .metadata {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metadata {
+    justify-content: center;
+  }
+
+  #players {
+    display: none;
+  }
+
+  .player-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edit-btn {
+    top: 0;
+    right: 0;
+  }
+
+  .delete-btn {
+    top: 0;
+    right: -20px;
+  }
+
+  .title {
+    color: #001489;
+    size: 24px;
+    margin: 20px 0 0 0;
+  }
+
+  .single-player-image {
+    width: 300px;
+    height: 200px;
+  }
+}

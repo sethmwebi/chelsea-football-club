@@ -23,7 +23,7 @@ const renderPlayerInfo = (player) => {
   // Delete button
   const deleteButton = document.createElement("i");
   deleteButton.classList.add("delete-btn", "fa-solid", "fa-trash-can");
-  deleteButton.addEventListener("click", () => deletePlayer(player.id));
+  deleteButton.addEventListener("click", () => {});
   playerInfo.appendChild(deleteButton);
 
   // Player name

@@ -1,7 +1,8 @@
 const heroSection = document.getElementsByClassName("hero-section")[0];
 const metadata = document.getElementsByClassName("metadata")[0];
 const statsSection = document.getElementsByClassName("stats")[0];
-const BASE_URL = "https://cfc-player-management.onrender.com";
+// const BASE_URL = "https://cfc-player-management.onrender.com";
+const BASE_URL = "http://localhost:8001";
 
 // Render player information
 const renderPlayerInfo = (player) => {
@@ -23,7 +24,7 @@ const renderPlayerInfo = (player) => {
   // Delete button
   const deleteButton = document.createElement("i");
   deleteButton.classList.add("delete-btn", "fa-solid", "fa-trash-can");
-  deleteButton.addEventListener("click", () => {});
+  deleteButton.addEventListener("click", () => deletePlayer(player.id));
   playerInfo.appendChild(deleteButton);
 
   // Player name

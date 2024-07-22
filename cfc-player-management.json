@@ -37,13 +37,13 @@
         {
           "season": "2023-2024",
           "appearances": 26,
-          "goals": 8,
-          "assists": 7
+          "goals": 6,
+          "assists": 5
         },
         {
           "season": "2022-2023",
           "appearances": 32,
-          "goals": 20,
+          "goals": 2,
           "assists": 9
         }
       ]
@@ -97,7 +97,7 @@
         {
           "season": "2022-2023",
           "appearances": 22,
-          "goals": 20,
+          "goals": 2,
           "assists": 3
         }
       ]
@@ -171,7 +171,7 @@
           "season": "2022-2023",
           "appearances": 31,
           "goals": 28,
-          "assists": 1
+          "assists": 6
         },
         {
           "season": "2021-2022",
@@ -184,7 +184,7 @@
     {
       "id": "8",
       "name": "Hakim Ziyech",
-      "nationality": "Moroccan",
+      "nationality": "Egyptian",
       "position": "Midfielder",
       "date_of_birth": "1993-03-19",
       "image": "https://e0.365dm.com/22/07/1600x900/skysports-hakim-ziyech-chelsea_5820964.jpg?20220702104252",
@@ -197,7 +197,7 @@
         {
           "season": "2022-2023",
           "appearances": 18,
-          "goals": 0,
+          "goals": 12,
           "assists": 3
         },
         {
